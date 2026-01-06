@@ -1,7 +1,7 @@
 # learn-cicd-typescript-starter (Notely)
 
 This should be the badge here
-![dynamic badge](https://github.com/epzeller/learn-cicd-typescript-starter/actions/workflows/ci/badge.svg)
+![dynamic badge](https://github.com/epzeller/learn-cicd-typescript-starter/actions/workflows/ci.yml/badge.svg)
 And the badge should be above this line
 
 This repo contains the typescript starter code for the "Notely" application for the "Learn CICD" course on [Boot.dev](https://boot.dev).
