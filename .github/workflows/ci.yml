@@ -5,6 +5,29 @@ on:
     branches: [main]
 
 jobs:
+  format_check:
+    name: Format Check
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 21
+
+      - name: Check Version
+        run: node --version
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Tests
+        run: npm run format:check
+
+
   tests:
     name: Tests
     runs-on: ubuntu-latest
