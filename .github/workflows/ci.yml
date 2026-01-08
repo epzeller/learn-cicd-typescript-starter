@@ -6,7 +6,7 @@ on:
 
 jobs:
   format_check:
-    name: Format Check
+    name: Style
     runs-on: ubuntu-latest
 
     steps:
