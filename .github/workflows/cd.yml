@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  Deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 21
+
+      - name: Check Version
+        run: node --version
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run Format Check
+        run: npm run build
