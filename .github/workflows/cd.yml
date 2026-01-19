@@ -39,4 +39,4 @@ jobs:
         run: 'gcloud info'
 
       - name: 'Push to artifactory'
-        run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-474418/notely-ar-repo:latest .
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/notely-474418/notely-ar-repo/notely:latest .
